@@ -1,6 +1,6 @@
 package model
 
-// Vehicle represents a vehicle of a certain type (e.g scooter)
+// Vehicle represents a vehicle of a certain type (e.g scooter, car, bike)
 // This entity is not used in this implementation.
 // The purpose of it being here is to showcase how the system can be extended to display Vehicle details together with its location.
 type Vehicle struct {

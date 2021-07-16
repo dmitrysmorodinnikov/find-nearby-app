@@ -1,0 +1,14 @@
+LOG_LEVEL: "debug"
+LOG_FORMAT: "plaintext"
+
+APP_PORT: 3333
+APP_HOST: "localhost"
+
+DB_HOST: localhost
+DB_PORT: 5430
+DB_NAME: find_nearby_dev
+DB_USER: postgres
+DB_PASS: postgres
+DB_MAX_IDLE_CONN: 10
+DB_MAX_OPEN_CONN: 200
+DB_CONN_MAX_LIFETIME: 30m
