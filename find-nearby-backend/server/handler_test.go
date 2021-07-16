@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"find-nearby-backend/config"
 	"fmt"
 	"net/http"
 	"net/http/httptest"
