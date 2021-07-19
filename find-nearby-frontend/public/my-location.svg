@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="256" height="256">
+  <title>Favorite Location</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M33.939 1.1a19.527 19.527 0 0 0-3.883 0A18.942 18.942 0 0 0 13 20.053a18.424 18.424 0 0 0 .158 2.305c.751 6.933 4.765 12.515 8.646 17.914C26.324 46.557 31 53.056 31 62h2c0-8.944 4.673-15.443 9.192-21.729 3.879-5.4 7.891-10.975 8.643-17.885A18.89 18.89 0 0 0 33.939 1.1z"
+  fill="#ffdea5"></path>
+  <path data-name="opacity" d="M32 1a19.263 19.263 0 0 0-1.943.1A18.942 18.942 0 0 0 13 20.053a18.424 18.424 0 0 0 .158 2.305c.751 6.933 4.765 12.515 8.646 17.914C26.324 46.557 31 53.056 31 62h1z"
+  fill="#000064" opacity=".15"></path>
+  <path data-name="layer1" fill="#ed5451" d="M31.999 25.21l-6.182 4.51 2.381-7.271-6.199-4.483h7.65l2.35-7.266 2.348 7.266h7.652l-6.201 4.483 2.381 7.271-6.18-4.51z"></path>
+</svg>
