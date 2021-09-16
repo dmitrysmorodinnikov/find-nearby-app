@@ -17,10 +17,16 @@ class LocationFinder extends React.Component {
         this.handleLocationsChange = this.handleLocationsChange.bind(this)
     }
 
-    handleLatChange = (changedLat) => this.setState({ lat: changedLat !== '' ? Number.parseFloat(changedLat) : '' })
-    handleLngChange = (changedLng) => this.setState({ lng: changedLng !== '' ? Number.parseFloat(changedLng) : '' })
-    handleRadiusChange = (changedRadius) => this.setState({ radius: changedRadius !== '' ? Number.parseInt(changedRadius) : '' })
-    handleLimitChange = (changedLimit) => this.setState({ limit: changedLimit !== '' ? Number.parseInt(changedLimit) : '' })
+    // handleLatChange = (changedLat) => this.setState({ lat: changedLat !== '' ? Number.parseFloat(changedLat) : '' })
+    // handleLngChange = (changedLng) => this.setState({ lng: changedLng !== '' ? Number.parseFloat(changedLng) : '' })
+    // handleRadiusChange = (changedRadius) => this.setState({ radius: changedRadius !== '' ? Number.parseInt(changedRadius) : '' })
+    // handleLimitChange = (changedLimit) => this.setState({ limit: changedLimit !== '' ? Number.parseInt(changedLimit) : '' })
+
+    handleLatChange = (changedLat) => this.setState({ lat: changedLat })
+    handleLngChange = (changedLng) => this.setState({ lng: changedLng })
+    handleRadiusChange = (changedRadius) => this.setState({ radius: changedRadius })
+    handleLimitChange = (changedLimit) => this.setState({ limit: changedLimit })
+
     handleLocationsChange = (changedLocations) => this.setState({ locations: changedLocations })
 
     render() {

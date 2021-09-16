@@ -1,0 +1,29 @@
+version: "3.1"
+
+services:
+  postgres:
+    image: postgis/postgis
+    command: postgres -N 500
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: find_nearby_dev
+      POSTGRES_HOST: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+  find-nearby-server:
+    build: .
+    depends_on:
+      - postgres
+    restart: on-failure
+    environment:
+      APP_HOST: find-nearby-server
+      APP_PORT: 8081
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: find_nearby_dev
+      DB_USER: postgres
+      DB_PASS: postgres
+    ports:
+      - "8081:8081"
+    command: bash -c "go run main.go migrate && go run main.go seed && go run main.go start"

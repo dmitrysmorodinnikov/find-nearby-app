@@ -1,0 +1,11 @@
+FROM golang:1.13
+
+WORKDIR /go/src/find-nearby-backend
+
+COPY . .
+
+RUN make copy-config
+RUN make build
+
+EXPOSE 8081
+CMD out/find_nearby_backend start

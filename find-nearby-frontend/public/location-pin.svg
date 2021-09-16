@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" height="64">
+  <title>Location Pin</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M33.942 1.1a19.527 19.527 0 0 0-3.883 0A18.942 18.942 0 0 0 13 20.053a18.424 18.424 0 0 0 .158 2.305c.751 6.933 4.765 12.515 8.646 17.914C26.328 46.557 31 53.056 31 62h2c0-8.944 4.673-15.443 9.192-21.729 3.879-5.4 7.891-10.975 8.643-17.885A18.89 18.89 0 0 0 33.942 1.1zM32.011 26a6 6 0 1 1 6-6 6 6 0 0 1-6 6z"
+  fill="#f27e7c"></path>
+  <path data-name="opacity" d="M26.011 20A6 6 0 0 1 32 14V1a19.263 19.263 0 0 0-1.943.1A18.942 18.942 0 0 0 13 20.053a18.424 18.424 0 0 0 .158 2.305c.751 6.933 4.765 12.515 8.646 17.914C26.328 46.557 31 53.056 31 62h1V26a6 6 0 0 1-5.989-6z"
+  fill="#000064" opacity=".15"></path>
+</svg>

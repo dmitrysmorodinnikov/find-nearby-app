@@ -21,10 +21,10 @@ class Form extends React.Component {
     event.preventDefault();
     axios.get("http://localhost:8081/locations/find", {
       params: {
-        latitude: this.props.lat,
-        longitude: this.props.lng,
-        radius: this.props.radius,
-        limit: this.props.limit
+        latitude: Number.parseFloat(this.props.lat),
+        longitude: Number.parseFloat(this.props.lng),
+        radius: Number.parseInt(this.props.radius),
+        limit: Number.parseInt(this.props.limit)
       }
     }
     ).then(res => {

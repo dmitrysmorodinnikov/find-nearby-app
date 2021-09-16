@@ -6,8 +6,8 @@ class Map extends React.Component {
     super(props);
     this.state = {
       viewport: {
-        latitude: this.props.lat !== '' ? this.props.lat : 1.306002,
-        longitude: this.props.lng !== '' ? this.props.lng : 103.927337,
+        latitude: this.props.lat !== '' ? Number.parseFloat(this.props.lat) : 1.306002,
+        longitude: this.props.lng !== '' ? Number.parseFloat(this.props.lng) : 103.927337,
         width: "100vw",
         height: "100vh",
         zoom: 10
@@ -31,8 +31,8 @@ class Map extends React.Component {
         >
           {showCurrentLocationMarker ? (
             <Marker
-              latitude={this.props.lat}
-              longitude={this.props.lng}
+              latitude={Number.parseFloat(this.props.lat)}
+              longitude={Number.parseFloat(this.props.lng)}
             >
               <button className="marker-btn"
               >
