@@ -53,7 +53,7 @@ db.rollback:
 	go run main.go rollback
 
 db.drop:
-	env PGPASSWORD=postgres dropdb --if-exists -U postgres -h localhost -p 5430 find-nearby-backend-dev
+	env PGPASSWORD=postgres dropdb --if-exists -U postgres -h localhost -p 5430 find_nearby_dev
 
 db.reset: db.docker-start db.drop db.create db.migrate
 
