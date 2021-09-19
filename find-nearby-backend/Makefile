@@ -39,12 +39,12 @@ docker.start:
 
 # Create a docker container or start the existing one
 db.docker-start:
-	docker start find-nearby-backend-dev || docker run -p 5430:5432 --name find-nearby-backend-dev -e POSTGRES_PASSWORD=postgres -d postgis/postgis
+	docker start find-nearby-backend-dev || docker run -p 5432:5432 --name find-nearby-backend-dev -e POSTGRES_PASSWORD=postgres -d halfi/postgis:latest
 
 db.setup: db.create db.migrate
 
 db.create:
-	env PGPASSWORD=postgres createdb -Eutf8 -U postgres -h localhost -p 5430 find_nearby_dev
+	env PGPASSWORD=postgres createdb -Eutf8 -U postgres -h localhost -p 5432 find_nearby_dev
 
 db.migrate:
 	go run main.go migrate
@@ -53,7 +53,7 @@ db.rollback:
 	go run main.go rollback
 
 db.drop:
-	env PGPASSWORD=postgres dropdb --if-exists -U postgres -h localhost -p 5430 find_nearby_dev
+	env PGPASSWORD=postgres dropdb --if-exists -U postgres -h localhost -p 5432 find_nearby_dev
 
 db.reset: db.docker-start db.drop db.create db.migrate
 
@@ -78,4 +78,6 @@ test-coverage:
 copy-config:
 	cp application.yml.sample application.yml
 
-
+run-backend-local: | copy-config build db.docker-start
+	sleep 5 && make db.setup
+	make test

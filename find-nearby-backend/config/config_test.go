@@ -15,5 +15,5 @@ func TestLoadConfig(t *testing.T) {
 	assert.Equal(t, 10, c.DatabaseMaxIdleConn())
 	assert.Equal(t, 200, c.DatabaseMaxOpenConn())
 	assert.Equal(t, 10, c.DatabaseMaxPoolSize())
-	assert.Equal(t, "postgres://postgres:postgres@localhost:5430/find_nearby_dev?sslmode=disable", c.DatabaseConnectionURL())
+	assert.Equal(t, "postgres://postgres:postgres@localhost:5432/find_nearby_dev?sslmode=disable", c.DatabaseConnectionURL())
 }
